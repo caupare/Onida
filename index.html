@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hide and Show Div elements in javascript</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper_left">
+    <ul>
+      <li data-li="onida" class="active">
+        <p>ONIDA</p>
+      </li>
+      <li data-li="registration">
+        <p>Registration</p>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="wrapper_right">
+    <div class="title">
+      ONIDA AC
+    </div>
+    <div class="container">
+      <div class="item onida">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>ONIDA AC</p>
+        </div>
+        <p>Onida AC<br>
+        ONIDA is a company backed by japanese innovative technologies.<br>
+        The best in the market you would ever get starting from ₹30,000.<br>
+        Onida has a network of 33 branch offices, 208 Customer Relation Centers and 41 depots spread across India.[6] As on 31 March 2005, Onida had a market capitalization of ₹3,014.6 million.<br></p>
+        <p>Energy Efficiency: 5 Star BEE<br>
+        Capacity: 1.5 tons<br>
+        Compressor Type: Inverter<br>
+        Annual Energy Consumption: 836 units<br>
+        Highly durable<br>
+        ilent operation</p>
+      </div>
+      <div class="item registration" style="display: none;">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>Registartion</p>
+        </div>
+        <body>
+
+          <center>
+            <table border="4" >
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <td><input type="text" name="fname" id="fname" class="form1"></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Last Name</th>
+                  <td><input type="text" name="lname" id="lname" class="form1"></td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td><input type="text" name="email" id="email" class="form1"></td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td><input type="text" name="age" id="age" class="form1" ></td>
+                </tr>
+                <tr>
+                  <th>Choose Model</th>
+                  <td><label for="Models" name="model" class="form1" ></label>
+                    <select id="model">
+                      <option value="Magnum opus" >Magnum opus</option>
+                      <option value="Thunder Bolt" >Thunder Bolt</option>
+                      <option value="SuperCharged" >SuperCharged</option>
+                    </select><br><br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Quantity</th>
+                  <td><input type="text" name="quantity" id="quantity"  class="form1" placeholder="Quantity">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mode of Payment</th>
+                  <td  > <input type="radio"  id="op" name="modes" value="Online"  class="form1">Online Payment</input>
+                    <input type="radio"  id="COD" name="modes"  value="COD"  class="form1">COD</input>
+                  </td>
+                </tr>
+                <tr id="btna">
+                  <td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+                </tr>
+              </tbody>
+            </table>
+        
+            <table border="4" id="show">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Age</th>
+                  <th>Choose Model</th>
+                  <th>Quantity</th>
+                  <th>Mode of Payment</th>
+                </tr>
+              </thead>
+            </table>
+          </center>
+          
+          
+        </body>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
