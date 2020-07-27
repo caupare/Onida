@@ -55,12 +55,18 @@ alert("Age cannot be "+list1[3]+"!!\n Enter Numeric values only!!");
 document.getElementById('age').value='';
 return; 
 }
+if(list1[3]=="")
+{
+  alert(" Age cannot be Empty !!\n Enter Numeric values only!!");
+  document.getElementById('age').value='';
+  return; 
+}
 list1[4] = document.getElementById("model").value;
 list1[5] = document.getElementById("quantity").value;
 if(list1[5]=="")
 {
   alert(" Quantity cannot be Empty !!\n Enter Numeric values only!!");
-  document.getElementById('age').value='';
+  document.getElementById('quantity').value='';
   return; 
 }
 if(isNaN(list1[5]))
